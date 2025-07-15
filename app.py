@@ -1,4 +1,5 @@
 import os
+os.environ["STREAMLIT_WATCHDOG_MODE"] = "poll"
 import keras
 from keras.models import load_model
 import streamlit as st 
