@@ -1,3 +1,4 @@
+import h5py
 import os
 import numpy as np
 import tensorflow as tf
@@ -116,4 +117,4 @@ def classify_images(image_path):
 print(classify_images('Sample/rose.jpg'))
 
 # Model Saving
-model.save('Flower_Recog_Model.h5')
+model = keras.models.load_model('Flower_Recog_Model.h5', compile=False)
