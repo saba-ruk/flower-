@@ -1,7 +1,6 @@
 import os
 import numpy as np
 import tensorflow as tf
-from my_custom_module import MyCustomLayer
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dense, Dropout, Flatten
