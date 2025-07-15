@@ -13,7 +13,7 @@ st.header('🌸 Flower Classification CNN Model')
 flower_names = ['daisy', 'dandelion','rose', 'sunflower', 'tulip']
 
 # Load trained model
-model = load_model('Flower_Recog_Model.h5,compile=False))
+model = load_model('Flower_Recog_Model.h5,compile=False)
 
 def classify_images(image_path):
     input_image = tf.keras.utils.load_img(image_path, target_size=(180,180))
