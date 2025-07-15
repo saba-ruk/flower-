@@ -34,7 +34,7 @@ def load_and_analyze_data():
         validation_split=0.2,
         subset='training',
         batch_size=BATCH_SIZE,
-        image_size=(IMG_SIZE, IMG_SIZE)
+        image_size=(IMG_SIZE, IMG_SIZE))
     
     val_ds = tf.keras.utils.image_dataset_from_directory(
         BASE_DIR,
