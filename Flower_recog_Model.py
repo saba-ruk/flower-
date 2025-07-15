@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import tensorflow as tf
+from my_custom_module import MyCustomLayer
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dense, Dropout, Flatten
@@ -116,5 +117,5 @@ def classify_images(image_path):
 print(classify_images('Sample/rose.jpg'))
 
 # Model Saving
-model = tf.keras.models.load_model('your_original_model.h5')  # Load with tf.keras
+model = load_model('Flower_Recog_Model.h5', custom_objects={'MyCustomLayer': MyCustomLayer})
 model.save('Flower_Recog_Model.h5')  # Save again with tf.keras
